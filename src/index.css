@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FBF8F3;
+    color: #2D1A10;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-image: 
+      radial-gradient(#C27D38 0.4px, transparent 0.4px),
+      radial-gradient(#263C2B 0.35px, #FBF8F3 0.35px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+  }
+
+  h1, h2, h3, h4, .font-serif-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-brand {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.18em;
+  }
+}
+
+/* Crochet stitch styled border */
+.stitch-border {
+  border-style: dashed;
+  border-width: 1.5px;
+  border-color: rgba(194, 125, 56, 0.4);
+}
+
+.stitch-border-moss {
+  border-style: dashed;
+  border-width: 1.5px;
+  border-color: rgba(53, 83, 60, 0.35);
+}
+
+/* Vintage Gilded Frame Effect */
+.vintage-frame-card {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #E6DCCD;
+  box-shadow: 0 10px 25px -5px rgba(61, 36, 21, 0.07);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vintage-frame-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -8px rgba(61, 36, 21, 0.12);
+  border-color: #C27D38;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3ECE2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5C0A5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C27D38;
+}
