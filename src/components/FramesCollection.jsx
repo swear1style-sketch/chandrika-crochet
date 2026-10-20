@@ -33,10 +33,10 @@ export default function FramesCollection({ activeCategoryFilter, setActiveCatego
           </div>
 
           {/* Interactive Filter Pills */}
-          <div className="flex flex-wrap items-center gap-2 bg-parchment-200/70 p-1.5 rounded-full border border-parchment-300">
+          <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1 sm:pb-0 scrollbar-none sm:flex-wrap bg-parchment-200/70 p-1.5 rounded-2xl sm:rounded-full border border-parchment-300 max-w-full">
             <button
               onClick={() => setActiveCategoryFilter('frames')}
-              className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${
+              className={`px-3.5 sm:px-4 py-2 sm:py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap shrink-0 ${
                 activeCategoryFilter === 'frames'
                   ? 'bg-cabin-900 text-parchment-100 shadow-sm'
                   : 'text-cabin-800 hover:text-amberGold-700'
@@ -46,7 +46,7 @@ export default function FramesCollection({ activeCategoryFilter, setActiveCatego
             </button>
             <button
               onClick={() => setActiveCategoryFilter('action-figures')}
-              className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${
+              className={`px-3.5 sm:px-4 py-2 sm:py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap shrink-0 ${
                 activeCategoryFilter === 'action-figures'
                   ? 'bg-cabin-900 text-parchment-100 shadow-sm'
                   : 'text-cabin-800 hover:text-amberGold-700'
@@ -56,7 +56,7 @@ export default function FramesCollection({ activeCategoryFilter, setActiveCatego
             </button>
             <button
               onClick={() => setActiveCategoryFilter('painting-postcards')}
-              className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${
+              className={`px-3.5 sm:px-4 py-2 sm:py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap shrink-0 ${
                 activeCategoryFilter === 'painting-postcards'
                   ? 'bg-cabin-900 text-parchment-100 shadow-sm'
                   : 'text-cabin-800 hover:text-amberGold-700'
@@ -66,7 +66,7 @@ export default function FramesCollection({ activeCategoryFilter, setActiveCatego
             </button>
             <button
               onClick={() => setActiveCategoryFilter('all')}
-              className={`px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${
+              className={`px-3.5 sm:px-4 py-2 sm:py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap shrink-0 ${
                 activeCategoryFilter === 'all'
                   ? 'bg-cabin-900 text-parchment-100 shadow-sm'
                   : 'text-cabin-800 hover:text-amberGold-700'
@@ -193,10 +193,10 @@ export default function FramesCollection({ activeCategoryFilter, setActiveCatego
               href="https://wa.me/919848759103?text=Hi%20Chandrika,%20I%20would%20like%20to%20discuss%20a%20custom%20crochet%20order%20with%20you!"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-cabin-900 hover:bg-cabin-800 text-parchment-100 text-xs font-semibold tracking-wider uppercase shadow-md transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-semibold tracking-wider uppercase shadow-md transition-all active:scale-95"
             >
-              <WhatsAppIcon className="w-4 h-4 text-amberGold-400" />
-              <span>Contact Directly on WhatsApp (+91 98487 59103)</span>
+              <WhatsAppIcon className="w-4 h-4 fill-white text-white" />
+              <span>Contact Directly on WhatsApp</span>
             </a>
           </div>
         </div>

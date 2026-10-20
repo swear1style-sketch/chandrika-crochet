@@ -75,14 +75,14 @@ export default function ContactFooter({ onOpenCommission }) {
                 href={BRAND_INFO.whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-3 text-parchment-200 hover:text-amberGold-400 transition-colors p-2 rounded-lg bg-cabin-800/60 border border-cabin-800 hover:border-amberGold-600/40"
+                className="flex items-center gap-3 text-parchment-200 hover:text-emerald-400 transition-colors p-2 rounded-lg bg-cabin-800/60 border border-cabin-800 hover:border-emerald-600/40 group"
               >
-                <div className="w-8 h-8 rounded-full bg-amberGold-600/20 flex items-center justify-center shrink-0">
-                  <Phone className="w-4 h-4 text-amberGold-400" />
+                <div className="w-8 h-8 rounded-full bg-emerald-600/20 flex items-center justify-center shrink-0">
+                  <WhatsAppIcon className="w-4 h-4 text-emerald-400" />
                 </div>
                 <div>
-                  <span className="text-[10px] text-parchment-400 uppercase tracking-wider block">Phone & WhatsApp</span>
-                  <span className="font-bold">{BRAND_INFO.phone}</span>
+                  <span className="text-[10px] text-parchment-400 uppercase tracking-wider block">Direct Order & Inquiries</span>
+                  <span className="font-semibold text-emerald-400 group-hover:underline">Chat on WhatsApp</span>
                 </div>
               </a>
 
@@ -173,8 +173,20 @@ export default function ContactFooter({ onOpenCommission }) {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-parchment-400">
-          <div>
-            © {new Date().getFullYear()} Studio Chandrika. All hand-crocheted rights reserved. Crafted with care in Himachal Pradesh.
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-left">
+            <span>© {new Date().getFullYear()} Studio Chandrika. All hand-crocheted rights reserved.</span>
+            <span className="hidden sm:inline text-parchment-600">•</span>
+            <span>
+              Engineered by{' '}
+              <a
+                href="https://vectoraslab.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-amberGold-400 hover:text-amberGold-300 font-semibold underline underline-offset-2 transition-colors"
+              >
+                vectoraslab.com
+              </a>
+            </span>
           </div>
 
           <button

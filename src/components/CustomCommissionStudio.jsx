@@ -75,10 +75,10 @@ Hi Chandrika, I would love to commission this custom handcrafted piece with you.
         </div>
 
         {/* Studio Box */}
-        <div className="bg-white rounded-3xl shadow-artisan border border-parchment-300 p-6 sm:p-10 relative overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-artisan border border-parchment-300 p-5 sm:p-10 relative overflow-hidden">
           
           {/* Inner stitch accent */}
-          <div className="absolute inset-3 border border-dashed border-amberGold-600/20 rounded-2xl pointer-events-none"></div>
+          <div className="absolute inset-2 sm:inset-3 border border-dashed border-amberGold-600/20 rounded-2xl pointer-events-none"></div>
 
           <div className="relative z-10 space-y-8">
             
@@ -201,10 +201,10 @@ Hi Chandrika, I would love to commission this custom handcrafted piece with you.
                 href={generateWhatsAppUrl()}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-cinzel font-bold tracking-wider uppercase shadow-md transition-all group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-cinzel font-bold tracking-wider uppercase shadow-md transition-all group active:scale-95"
               >
                 <WhatsAppIcon className="w-4 h-4 fill-white text-white" />
-                <span>Submit Custom Inquiry to Chandrika (+91 98487 59103)</span>
+                <span>Submit Custom Inquiry on WhatsApp</span>
                 <Send className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>

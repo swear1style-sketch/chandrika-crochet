@@ -149,9 +149,9 @@ export default function Navbar({ onOpenCommission }) {
                   href={BRAND_INFO.whatsappUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full py-2.5 rounded-full bg-cabin-900 text-parchment-100 font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-sm"
+                  className="w-full py-3 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-sm active:scale-95"
                 >
-                  <MessageCircle className="w-4 h-4 text-amberGold-400" />
+                  <WhatsAppIcon className="w-4 h-4 fill-white text-white" />
                   <span>Chat on WhatsApp</span>
                 </a>
               </div>

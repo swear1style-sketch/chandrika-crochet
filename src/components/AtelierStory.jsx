@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Heart, Sparkles, Feather, Mail, Phone } from 'lucide-react';
+import { WhatsAppIcon } from './Icons';
 import { BRAND_INFO } from '../data/products';
 
 export default function AtelierStory() {
@@ -87,9 +88,10 @@ export default function AtelierStory() {
               </div>
 
               <div className="p-3 rounded-xl bg-parchment-50 border border-parchment-200 space-y-1">
-                <span className="text-[10px] text-cabin-600 uppercase tracking-wider block font-semibold">Direct Atelier WhatsApp</span>
-                <a href={BRAND_INFO.whatsappUrl} target="_blank" rel="noreferrer" className="font-bold text-amberGold-800 hover:underline">
-                  {BRAND_INFO.phone}
+                <span className="text-[10px] text-cabin-600 uppercase tracking-wider block font-semibold">Direct Atelier Orders</span>
+                <a href={BRAND_INFO.whatsappUrl} target="_blank" rel="noreferrer" className="font-bold text-emerald-700 hover:underline inline-flex items-center gap-1.5">
+                  <WhatsAppIcon className="w-3.5 h-3.5 fill-emerald-700 text-emerald-700" />
+                  <span>Chat on WhatsApp</span>
                 </a>
               </div>
 

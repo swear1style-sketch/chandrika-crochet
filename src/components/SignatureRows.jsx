@@ -43,10 +43,10 @@ export default function SignatureRows({ onSelectCategory }) {
               <div
                 key={category.id}
                 id={`cat-${category.id}`}
-                className="bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-artisan border border-parchment-300 hover:shadow-artisan-hover transition-all duration-500 relative overflow-hidden group"
+                className="bg-white rounded-3xl p-5 sm:p-8 lg:p-12 shadow-artisan border border-parchment-300 hover:shadow-artisan-hover transition-all duration-500 relative overflow-hidden group"
               >
                 {/* Stitch accent border inside card */}
-                <div className="absolute inset-3 sm:inset-4 border border-dashed border-amberGold-600/20 rounded-2xl pointer-events-none"></div>
+                <div className="absolute inset-2 sm:inset-4 border border-dashed border-amberGold-600/20 rounded-2xl pointer-events-none"></div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
                   
@@ -130,12 +130,12 @@ export default function SignatureRows({ onSelectCategory }) {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="pt-4 flex flex-wrap items-center gap-3">
+                    <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                       <a
                         href={waOrderUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-cabin-900 hover:bg-emerald-700 text-parchment-100 text-xs font-semibold tracking-wider uppercase transition-all shadow-md group/btn"
+                        className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-cabin-900 hover:bg-emerald-700 text-parchment-100 text-xs font-semibold tracking-wider uppercase transition-all shadow-md group/btn"
                       >
                         <WhatsAppIcon className="w-4 h-4 text-emerald-400" />
                         <span>Place Order on WhatsApp</span>
@@ -143,7 +143,7 @@ export default function SignatureRows({ onSelectCategory }) {
 
                       <button
                         onClick={() => onSelectCategory(category.id)}
-                        className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-amberGold-600 bg-white hover:bg-amberGold-50 text-cabin-900 text-xs font-semibold tracking-wider uppercase transition-all shadow-sm"
+                        className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full border border-amberGold-600 bg-white hover:bg-amberGold-50 text-cabin-900 text-xs font-semibold tracking-wider uppercase transition-all shadow-sm"
                       >
                         <Eye className="w-3.5 h-3.5 text-amberGold-600" />
                         <span>View Sub-Catalog</span>

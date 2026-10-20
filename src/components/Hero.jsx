@@ -86,16 +86,16 @@ export default function Hero({ onOpenCommission, onSelectProduct }) {
                 </div>
 
                 {/* Texture Swatch Selector Tabs */}
-                <div className="mt-4 pt-3 border-t border-parchment-200 flex flex-wrap items-center justify-between gap-3">
+                <div className="mt-4 pt-3 border-t border-parchment-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div className="text-xs text-cabin-700 font-medium flex items-center gap-2">
-                    <span className="text-amberGold-700 font-bold">Stitch Inspector:</span>
-                    <span className="hidden sm:inline text-cabin-600">{textureDetails[activeTexture].detail}</span>
+                    <span className="text-amberGold-700 font-bold shrink-0">Stitch Inspector:</span>
+                    <span className="text-cabin-600 text-[11px] sm:text-xs truncate">{textureDetails[activeTexture].detail}</span>
                   </div>
                   
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
                     <button
                       onClick={() => setActiveTexture('full')}
-                      className={`px-2.5 py-1 text-xs rounded-md transition-all font-medium ${
+                      className={`px-2.5 py-1 text-xs rounded-md transition-all font-medium whitespace-nowrap shrink-0 ${
                         activeTexture === 'full'
                           ? 'bg-cabin-900 text-parchment-100 shadow-sm'
                           : 'bg-parchment-200 text-cabin-800 hover:bg-parchment-300'
@@ -105,7 +105,7 @@ export default function Hero({ onOpenCommission, onSelectProduct }) {
                     </button>
                     <button
                       onClick={() => setActiveTexture('sun')}
-                      className={`px-2.5 py-1 text-xs rounded-md transition-all font-medium ${
+                      className={`px-2.5 py-1 text-xs rounded-md transition-all font-medium whitespace-nowrap shrink-0 ${
                         activeTexture === 'sun'
                           ? 'bg-cabin-900 text-parchment-100 shadow-sm'
                           : 'bg-parchment-200 text-cabin-800 hover:bg-parchment-300'
@@ -115,7 +115,7 @@ export default function Hero({ onOpenCommission, onSelectProduct }) {
                     </button>
                     <button
                       onClick={() => setActiveTexture('cabin')}
-                      className={`px-2.5 py-1 text-xs rounded-md transition-all font-medium ${
+                      className={`px-2.5 py-1 text-xs rounded-md transition-all font-medium whitespace-nowrap shrink-0 ${
                         activeTexture === 'cabin'
                           ? 'bg-cabin-900 text-parchment-100 shadow-sm'
                           : 'bg-parchment-200 text-cabin-800 hover:bg-parchment-300'
@@ -125,7 +125,7 @@ export default function Hero({ onOpenCommission, onSelectProduct }) {
                     </button>
                     <button
                       onClick={() => setActiveTexture('pine')}
-                      className={`px-2.5 py-1 text-xs rounded-md transition-all font-medium ${
+                      className={`px-2.5 py-1 text-xs rounded-md transition-all font-medium whitespace-nowrap shrink-0 ${
                         activeTexture === 'pine'
                           ? 'bg-cabin-900 text-parchment-100 shadow-sm'
                           : 'bg-parchment-200 text-cabin-800 hover:bg-parchment-300'
@@ -214,7 +214,7 @@ export default function Hero({ onOpenCommission, onSelectProduct }) {
             </div>
 
             {/* Exact Contact & Origin Badge from Image 1 Card */}
-            <div className="pt-4 border-t border-parchment-300 grid grid-cols-2 gap-3 text-xs">
+            <div className="pt-4 border-t border-parchment-300 grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 text-xs">
               <a
                 href={BRAND_INFO.instagramUrl}
                 target="_blank"
@@ -237,10 +237,10 @@ export default function Hero({ onOpenCommission, onSelectProduct }) {
                 href={BRAND_INFO.whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 text-cabin-800 hover:text-amberGold-700 transition-colors"
+                className="flex items-center gap-2 text-cabin-800 hover:text-emerald-700 transition-colors"
               >
-                <Phone className="w-4 h-4 text-amberGold-700 shrink-0" />
-                <span className="font-semibold">{BRAND_INFO.phone}</span>
+                <WhatsAppIcon className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span className="font-semibold text-emerald-800">Order on WhatsApp</span>
               </a>
 
               <div className="flex items-center gap-2 text-cabin-800">
