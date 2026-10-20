@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Sparkles, Send, MessageCircle, Heart, ArrowUp } from 'lucide-react';
-import { InstagramIcon } from './Icons';
+import { InstagramIcon, WhatsAppIcon } from './Icons';
 import { BRAND_INFO } from '../data/products';
 
 export default function ContactFooter({ onOpenCommission }) {
